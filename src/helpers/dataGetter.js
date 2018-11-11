@@ -104,7 +104,7 @@ const getFullPlayerInfo = players => Promise.all([getAllTeamsFromDb(), getAllPos
     playersFromDb.forEach((player) => {
       const newPlayer = player;
       teamsFromDb.forEach((team) => {
-        if (player.teamId === team.id) {
+        if (player. === team.id) {
           newPlayer.team = team.name;
         }
       });
